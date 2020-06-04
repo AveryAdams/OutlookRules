@@ -10,7 +10,7 @@ Public Sub RunRules()
     Set rules = Session.DefaultStore.GetRules()
     
     For Each oRule In rules
-        oRule.Execute
+        oRule.Execute ShowProgress:=True
     Next
     
     
